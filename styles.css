@@ -6,6 +6,11 @@
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Roboto", Georgia, sans-serif;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .nav {
@@ -42,7 +47,7 @@ ul.main-nav {
   padding: 0 25px;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Roboto", Georgia, Serif;
+  font-family: "Roboto", Georgia, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -65,7 +70,7 @@ ul.main-nav {
   margin-right: 140px;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Roboto", Georgia, Serif;
+  font-family: "Roboto", Georgia, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -87,7 +92,7 @@ ul.main-nav {
   color: #000000;
   margin-left: 140px;
   margin-top: 86px;
-  font-family: "Roboto", Georgia, Serif;
+  font-family: "Roboto", Georgia, sans-serif;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -97,7 +102,7 @@ ul.main-nav {
   color: #000000;
   margin-left: 140px;
   margin-top: 25px;
-  font-family: "Roboto", Georgia, Serif;
+  font-family: "Roboto", Georgia, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -113,15 +118,58 @@ ul.main-nav {
   margin-left: 140px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Roboto", Georgia, Serif;
+  font-family: "Roboto", Georgia, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   background-image: url(/images/btn.png);
+  cursor: pointer;
+}
+
+.slider-button:hover {
+  background-color: #e74246;
 }
 
 .slider-image {
   margin-right: 170px;
   display: flex;
   align-items: flex-end;
+}
+
+.our-services {
+  width: 1440px;
+  margin-left: 280px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+}
+
+.our-services-image {
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
+.our-services-list {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  text-transform: uppercase;
+  font-family: "Roboto", Georgia, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.our-services-tagline {
+  margin-left: 100px;
+  margin-bottom: 40px;
+}
+
+.order-btn1 {
+  margin-left: 100px;
+  padding: ;
+  text-decoration: none;
+  text-align: center;
+  background: no-repeat;
+  background-image: url(/images/button-red.png);
 }

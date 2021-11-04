@@ -11,39 +11,39 @@
     />
     <title>Nerds - веб-разработка сайтов и мобильных приложений</title>
   </head>
-  <body>
-    <h1 class="visually-hidden">Студия веб-дизайна Nerds</h1>
-    <nav class="nav">
-      <a href="#"><div class="main-logo"></div></a>
-      <ul class="main-nav">
-        <li class="nav-link"><a href="#">Студия</a></li>
-        <li class="nav-link"><a href="#">Клиенты</a></li>
-        <li class="nav-link"><a href="shop.html">Магазин</a></li>
-        <li class="nav-link"><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="cart-enter">
-        <li><img src="images/cart-icon.svg" /></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
-    <slider class="slider">
-      <div>
-        <p class="tagline">Долго, дорого, скрупулезно.</p>
-        <p class="slider-text">
-          Математически выверенный дизайн<br />
-          для вашего сайта или мобильного приложения
-        </p>
-        <form action="#">
-          <button class="slider-button">Узнать больше</button>
-        </form>
-      </div>
-      <div class="slider-image">
-        <img src="images/slide1.png" alt="Первый слайд" />
-      </div>
-    </slider>
 
-    <main>
+   <body>
+    <h1 class="visually-hidden">Студия веб-дизайна Nerds</h1>
+    <div class="background">
       <div class="center">
+        <div class="navigation">
+            <a class="main-logo" href="index.html"><img src="images/nerds-logo-svg.svg"></a>
+            <a class="nav-link" href="#">Студия</a>
+            <a class="nav-link" href="#">Клиенты</a>
+            <a class="nav-link" href="shop.html">Магазин</a>
+            <a class="nav-link" href="#">Контакты</a>
+            <a class="cart-enter" href="#">Корзина</a>
+        </div>  
+      </div>
+
+      <div class="center">
+        <slider class="slider">
+          <div class="slider-information">
+            <p class="tagline">Долго, дорого, скрупулезно.</p>
+            <p class="slider-text">Математически выверенный дизайн<br />для вашего сайта или мобильного приложения</p>
+            <form action="#">
+               <button class="slider-button">Узнать больше</button>
+            </form>
+          </div>
+          <div class="slider-image">
+            <img src="images/slide1.png" alt="Первый слайд" />
+          </div>
+        </slider>
+      </div>        
+    </div>
+  
+  <div class="center">
+    <main>
         <section class="our-services">
           <div>
             <img
@@ -128,14 +128,14 @@
         </div>
         <img src="images/divide copy 2.png" alt="" />
         <div class="partners">
-          <a href="#"><img src="images/logo-1.png" /></a>
+          <a href="https://htmlacademy.ru/" target="_blank"><img src="images/logo-1.png" /></a>
           <a href="#"><img src="images/logo-2.png" /></a>
           <a href="#"><img src="images/logo-3.png" /></a>
           <a href="#"><img src="images/logo-4.png" /></a>
         </div>
         <img src="images/divide copy 2.png" alt="" />
-      </div>
     </main>
+  </div>
 
     <div class="map">
       <img src="images/map.png" width="1440" />
@@ -147,6 +147,7 @@
         <a class="submit" href="#"><span>Напишите нам</span></a>
       </div>
     </div>
+  
     <div class="center">
       <footer>
         <div class="social-links">
@@ -175,6 +176,6 @@
       </footer>
     </div>
 
-    <script ="java.js"></script>
+    <script ="script.js"></script>
   </body>
 </html>

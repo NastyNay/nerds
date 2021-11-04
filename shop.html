@@ -11,22 +11,119 @@
     />
     <title>Nerds - веб-разработка сайтов и мобильных приложений</title>
   </head>
-  <body>
+   <body>
     <h1 class="visually-hidden">Студия веб-дизайна Nerds</h1>
-    <nav class="nav">
-      <a class="main-logo" href="index.html">
-        <img src="images/nerds-logo.png" alt="лого сайта" />
-      </a>
-      <ul class="main-nav">
-        <li class="nav-link"><a href="#">Студия</a></li>
-        <li class="nav-link"><a href="#">Клиенты</a></li>
-        <li class="nav-link active"><a href="shop.html">Магазин</a></li>
-        <li class="nav-link"><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="cart-enter">
-        <li><img src="images/cart-icon.svg" /></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-    </nav>
+    <div class="background">
+      <div class="center">
+        <div class="navigation">
+          <a class="main-logo" href="index.html"><img src="images/nerds-logo-svg.svg"></a>
+            <a class="nav-link" href="#">Студия</a>
+            <a class="nav-link" href="#">Клиенты</a>
+            <a class="nav-link link-active" href="shop.html">Магазин</a>
+            <a class="nav-link" href="#">Контакты</a>
+            <a class="cart-enter" href="#">Корзина</a>
+        </div>  
+      </div>
+    </div>
+
+    <div class="background">
+      <h2 class="shop-text">Магазин готовых шаблонов<h2>
+    </div>
+
+    <div class="center">
+      <div class="wrapper">  
+        <sidebar class="filter">
+          <span class="options-titles">Cтоимость:</span>
+        </sidebar>
+      
+      <main>
+        <div class="sort-list">
+            <span class="options-titles">Сортировать:</span>
+            <form action="#">
+              <button class="sort-list-button">По цене</button>
+            </form>
+            <form>
+              <button class="sort-list-button">По типу</button>
+            </form>
+            <form>
+              <button class="sort-list-button">По названию</button>
+            </form>
+        </div>
+
+        <div class="products-list">
+          <div class="product-item">
+            <img src="images/browser.svg" >
+            <img src="images/img-sedona.jpg" >
+          </div>
+
+          <div class="product-item">
+            <img src="images/browser.svg" >
+            <img src="images/img-pink.jpg" >
+          </div>
+
+          <div class="product-item">
+            <img src="images/browser.svg" >
+            <img src="images/img-barbershop.jpg" >
+          </div>
+
+          <div class="product-item">
+            <img src="images/browser.svg" >
+            <img src="images/img-mishka.jpg" >
+          </div>
+ 
+          <div class="product-item">
+            <img src="images/browser.svg" >
+            <img src="images/img-aplus.jpg" >
+          </div>
+
+          <div class="product-item">
+            <img src="images/browser.svg" >
+            <img src="images/img-kvast.jpg" >
+          </div>
+        </div>
+      </main>
+      </div>
+    </div>  
+    
+    <div class="map">
+      <img src="images/map.png" width="1440" />
+      <img class="map-marker" src="images/map-marker.png" />
+      <div class="write-to-us">
+        <h3>N&#x401;rds design studio</h3>
+        <p>191186, Санкт-Петербург, <br />ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="submit" href="#"><span>Напишите нам</span></a>
+      </div>
+    </div>
+  
+    <div class="center">
+      <footer>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a class="social-button" href="#">
+                <img src="images/vk-icon.svg" />
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <img src="images/fb-icon.svg" />
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#">
+                <img src="images/insta-icon.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="discount">
+          <p class="lets-be-friends">Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script ="script.js"></script>
   </body>
 </html>

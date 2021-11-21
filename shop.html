@@ -13,7 +13,7 @@
   </head>
    <body>
     <h1 class="visually-hidden">Студия веб-дизайна Nerds</h1>
-    <div class="background">
+    <div class="background background-shop">
       <div class="center">
         <div class="navigation">
           <a class="main-logo" href="index.html"><img src="images/nerds-logo-svg.svg"></a>
@@ -23,63 +23,165 @@
             <a class="nav-link" href="#">Контакты</a>
             <a class="cart-enter" href="#">Корзина</a>
         </div>  
+        <h2 class="shop-text">Магазин готовых шаблонов</h2>
       </div>
     </div>
 
-    <div class="background">
-      <h2 class="shop-text">Магазин готовых шаблонов<h2>
-    </div>
+    
+      
 
     <div class="center">
       <div class="wrapper">  
         <sidebar class="filter">
           <span class="options-titles">Cтоимость:</span>
+           <div class="range-buttons-block">
+            <button сlass="range-button-right" type="button"></button>
+            <span class="green-range-line"></span>
+            <button сlass="range-button-right" type="button"></button>
+            <span class="grey-range-line"></span>
+           </div>
+
+           <form class="range-price-form">
+              <label for="lowest-price">Oт</label>
+              <input type="text" placeholder="0" name="lowest-price">
+              <label for="highest-price">До</label>
+              <input type="text" placeholder="15 000" name="highest-price">
+          </form>
+
+          <span class="grid-title">Cетка:</span>
+          <form class="site-grid-choices">
+            <p class="grid-choice-list">
+              <input id="site-grid-choice1" type="radio" name="site-grid" value="Адаптивная">
+              <label for="site-grid-choice1">Адаптивная</label>
+            </p>
+            <p class="grid-choice-list">
+              <input id="site-grid-choice2" type="radio" name="site-grid" value="Фиксированная">
+              <label for="site-grid-choice2">Фиксированная</label>
+            </p> 
+            <p class="grid-choice-list">
+              <input id="site-grid-choice3" type="radio" name="site-grid" value="Резиновая">
+              <label for="site-grid-choice3">Резиновая</label>
+            </p>
+        </form>
+
+        <span class="features-title">Особенности:</span>
+          <form class="site-features-choices">
+            <p class="site-choice-list">
+              <input id="site-feature-choice1" type="checkbox">
+              <label for="site-feature-choice1">Слайдер</label></p>
+            <p class="site-choice-list">
+              <input id="site-feature-choice2" type="checkbox">
+              <label for="site-feature-choice2">Блок преимуществ</label>
+            </p>
+            <p class="site-choice-list">
+              <input id="site-feature-choice3" type="checkbox">
+              <label for="site-feature-choice3">Новости</label>
+            </p>
+            <p class="site-choice-list">
+              <input id="site-feature-choice4" type="checkbox">
+              <label for="site-feature-choice4">Галерея</label>
+            </p>
+            <p class="site-choice-list"> 
+              <input id="site-feature-choice5" type="checkbox">
+              <label for="site-feature-choice5">Корзина</label>
+            </p>
+           
+        </form>
+
+        <button class="big-sidebar-button">Показать</button>
+
         </sidebar>
       
       <main>
         <div class="sort-list">
             <span class="options-titles">Сортировать:</span>
             <form action="#">
-              <button class="sort-list-button">По цене</button>
+              <button class="sort-list-button sort-list-button-active">По цене</button>
             </form>
-            <form>
+            <form action="#">
               <button class="sort-list-button">По типу</button>
             </form>
-            <form>
+            <form action="#">
               <button class="sort-list-button">По названию</button>
+            </form>
+            <form action="#">
+              <button class="sort-list-button-down sort-list-button-active"><img src="images/icon-down-dir.png"></button>
+            </form>
+            <form action="#">
+              <button class="sort-list-button-up"><img src="images/icon-down-dir.png"></button>
             </form>
         </div>
 
         <div class="products-list">
           <div class="product-item">
-            <img src="images/browser.svg" >
+            <img class="computer-bar-image" src="images/browser.svg" >
             <img src="images/img-sedona.jpg" >
+            <div class="modal-information">
+              <h2 class="modal-information-title">Sedona</h2>
+              <p class="modal-information-text">Информационный сайт для туристов</p>
+              <button class="price-button">9 900 руб.</button>
+            </div>
           </div>
 
           <div class="product-item">
-            <img src="images/browser.svg" >
+            <img class="computer-bar-image" src="images/browser.svg" >
             <img src="images/img-pink.jpg" >
+            <div class="modal-information">
+              <h2 class="modal-information-title">Pink app</h2>
+              <p class="modal-information-text">Продуктовый лендинг
+                приложения для iOS и Android</p>
+              <button class="price-button">9 900 руб.</button>
+            </div>
           </div>
 
           <div class="product-item">
-            <img src="images/browser.svg" >
+            <img class="computer-bar-image" src="images/browser.svg" >
             <img src="images/img-barbershop.jpg" >
+            <div class="modal-information">
+              <h2 class="modal-information-title">Barbershop</h2>
+              <p class="modal-information-text">Сайт салоны красоты. Для мужчин, да.</p>
+              <button class="price-button">9 900 руб.</button>
+            </div>
           </div>
 
           <div class="product-item">
-            <img src="images/browser.svg" >
+            <img class="computer-bar-image" src="images/browser.svg" >
             <img src="images/img-mishka.jpg" >
+            <div class="modal-information">
+              <h2 class="modal-information-title">Mishka</h2>
+              <p class="modal-information-text">Интернет-магазин 
+                вязаных игрушек</p>
+              <button class="price-button">9 900 руб.</button>
+            </div>
           </div>
  
           <div class="product-item">
-            <img src="images/browser.svg" >
+            <img class="computer-bar-image" src="images/browser.svg" >
             <img src="images/img-aplus.jpg" >
+            <div class="modal-information">
+              <h2 class="modal-information-title">A Plus</h2>
+              <p class="modal-information-text">Лендинг курсов повышения квалификации</p>
+              <button class="price-button">9 900 руб.</button>
+            </div>
           </div>
 
           <div class="product-item">
-            <img src="images/browser.svg" >
+            <img class="computer-bar-image" src="images/browser.svg" >
             <img src="images/img-kvast.jpg" >
+            <div class="modal-information">
+              <h2 class="modal-information-title">Kvast</h2>
+              <p class="modal-information-text">Промо-сайт производителя
+                крафтового кваса</p>
+              <button class="price-button">9 900 руб.</button>
+            </div>
           </div>
+        </div>
+
+        <div class="pages-toggle">
+          <button class="page-button page-button-active">1</button>
+          <button class="page-button">2</button>
+          <button class="page-button">3</button>
+          <button class="big-page-toggle-button">Следующая</button>
         </div>
       </main>
       </div>
@@ -124,6 +226,29 @@
       </footer>
     </div>
 
-    <script ="script.js"></script>
+    <section class="modal modal-login">
+      <h2 class="write-to-us-title">Напишите нам</h2>
+      <form class="write-to-us-form">
+        <p class="label-input-organizer">
+          <label for="user-name">Ваше имя:</label>
+          <input class="user-name-field" id="user-name" type="text" placeholder="Имя Фамилия">
+        </p>
+        <p class="label-input-organizer">
+          <label for="user-email">Ваш e-mail:</label>
+          <input class="user-email-field" id="user-email" type="email" placeholder="email@example.com" >
+        </p>
+        <p class="label-input-organizer">
+          <label for="user-message">Текст письма:</label>
+          <textarea class="user-message-field" id="user-message" cols="30" rows="10" maxlength="1000" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="send-form-button">Отправить</button>
+      </form>
+
+      <button class="modal-close"></button>
+
+    </section>
+
+    <script src="js/script-popup-form.js"></script>
+    
   </body>
 </html>
